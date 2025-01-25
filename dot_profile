@@ -1,0 +1,8 @@
+export EDITOR=code
+export GIT_EDITOR=vim
+
+if [ -f ~/.profile_local ]; then
+  source ~/.profile_local
+fi
+
+source ~/.aliases.sh
