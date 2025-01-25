@@ -25,6 +25,8 @@ source ~/.profile
 # Colima
 export DOCKER_HOST="unix://$HOME/.colima/docker.sock"
 
+
+
 # Bun Completions & Setup
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
@@ -33,6 +35,11 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Add Scripts to PATH
 export PATH="$HOME/scripts/bin:$PATH"
+
+# TMUX
+if [[ -z "$TMUX" ]]; then
+    tmux
+fi
 
 # Set up Atuin
 eval "$(atuin init zsh --disable-up-arrow)"
