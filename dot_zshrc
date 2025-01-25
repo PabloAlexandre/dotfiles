@@ -34,6 +34,11 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # Add Scripts to PATH
 export PATH="$HOME/scripts/bin:$PATH"
 
+# NVM for now
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
 # TMUX
 if [[ -z "$TMUX" ]]; then
     tmux
